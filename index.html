@@ -369,6 +369,18 @@
         background-position: center;
         z-index: -1;
       }
+      /* Mobile view - shift background image left */
+      @media (max-width: 768px) {
+        .hero-bg {
+          background-position: 65% center; /* Adjust this value as needed */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-bg {
+          background-position: 70% center; /* Even more shift for smaller screens */
+        }
+      }
       .hero-content {
         max-width: 800px;
         z-index: 2;
@@ -1681,7 +1693,7 @@
               <ul class="features-list" id="modalProductFeatures"></ul>
 
               <div class="serving-info">
-                <h4>Benefits / Serving Suggestions:</h4>
+                <h4>Benefits:</h4>
                 <p id="modalProductServing"></p>
               </div>
             </div>
@@ -1705,52 +1717,64 @@
           </h4>
           <div class="retailer-grid">
             <div class="retailer-card">
-              <h4><i class="fas fa-store"></i> Total Wine & Spirits</h4>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> 123 Main Street, London
-              </p>
-              <p><i class="fas fa-phone"></i> +44 20 7123 4567</p>
-              <p><i class="fas fa-clock"></i> Mon-Sat: 10AM-10PM</p>
+              <h4><i class="fas fa-store"></i> Lovers Spot</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Tema Newtown</p>
+              <p><i class="fas fa-phone"></i> +233 24 728 4456</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
             </div>
             <div class="retailer-card">
-              <h4><i class="fas fa-store"></i> The Whisky Exchange</h4>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> 45 Oxford Street, London
-              </p>
-              <p><i class="fas fa-phone"></i> +44 20 7234 5678</p>
-              <p><i class="fas fa-clock"></i> Mon-Sun: 11AM-8PM</p>
+              <h4><i class="fas fa-store"></i> Cocoyam Spot</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Community 1, Tema</p>
+              <p><i class="fas fa-phone"></i> +233 24 419 4204</p>
+              <p><i class="fas fa-clock"></i> Mon-Sun: 6AM-10PM</p>
             </div>
             <div class="retailer-card">
-              <h4><i class="fas fa-store"></i> Soho Wine & Spirits</h4>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> 78 Wardour Street, London
-              </p>
-              <p><i class="fas fa-phone"></i> +44 20 7345 6789</p>
-              <p><i class="fas fa-clock"></i> Mon-Sat: 12PM-11PM</p>
+              <h4><i class="fas fa-store"></i> Look & Like</h4>
+              <p><i class="fas fa-map-marker-alt"></i>Community 2, Tema</p>
+              <p><i class="fas fa-phone"></i> +233 24 498 0506</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
             </div>
             <div class="retailer-card">
-              <h4><i class="fas fa-store"></i> The Dram Shop</h4>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> 234 Kings Road, London
-              </p>
-              <p><i class="fas fa-phone"></i> +44 20 7567 8901</p>
-              <p><i class="fas fa-clock"></i> Tue-Sun: 11AM-9PM</p>
+              <h4><i class="fas fa-store"></i> Kpeme Osofo</h4>
+              <p><i class="fas fa-map-marker-alt"></i> The Base</p>
+              <p><i class="fas fa-phone"></i> +233 24 576 5507</p>
+              <p><i class="fas fa-clock"></i> Tue-Sun: 6AM-10PM</p>
             </div>
             <div class="retailer-card">
-              <h4><i class="fas fa-store"></i> Harrods Spirits Room</h4>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> 87 Brompton Road, London
-              </p>
-              <p><i class="fas fa-phone"></i> +44 20 7890 1234</p>
-              <p><i class="fas fa-clock"></i> Mon-Sat: 10AM-8PM</p>
+              <h4><i class="fas fa-store"></i> Morry Spot</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Bortianor, Accra</p>
+              <p><i class="fas fa-phone"></i> +233 55 924 6477</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
             </div>
             <div class="retailer-card">
-              <h4><i class="fas fa-store"></i> Selfridges Wine Shop</h4>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> 400 Oxford Street, London
-              </p>
-              <p><i class="fas fa-phone"></i> +44 20 7801 2345</p>
-              <p><i class="fas fa-clock"></i> Mon-Sat: 9:30AM-9PM</p>
+              <h4><i class="fas fa-store"></i> Langba</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Kokrobite, Accra</p>
+              <p><i class="fas fa-phone"></i> +233 24 399 1103</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
+            </div>
+            <div class="retailer-card">
+              <h4><i class="fas fa-store"></i> Happy Yourself</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Kokrobite, Accra</p>
+              <p><i class="fas fa-phone"></i> +233 25 660 6813</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
+            </div>
+            <div class="retailer-card">
+              <h4><i class="fas fa-store"></i> Ask God</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Saltpond, Accra</p>
+              <p><i class="fas fa-phone"></i> +233 24 278 6579</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
+            </div>
+            <div class="retailer-card">
+              <h4><i class="fas fa-store"></i> McCall</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Cape Coast</p>
+              <p><i class="fas fa-phone"></i> +233 24 948 5122</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
+            </div>
+            <div class="retailer-card">
+              <h4><i class="fas fa-store"></i> Mary</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Takoradi</p>
+              <p><i class="fas fa-phone"></i> +233 24 890 4151</p>
+              <p><i class="fas fa-clock"></i> Mon-Sat: 6AM-10PM</p>
             </div>
           </div>
           <p
@@ -2023,7 +2047,7 @@
                 <img src="/images/property_2.jpg" alt="Citrus Burst Bitters" />
                 <div class="product-overlay">
                   <div class="product-details">
-                    <div class="product-abv">38% ABV</div>
+                    <!-- <div class="product-abv"></div> -->
                     <button
                       class="btn btn-primary view-details"
                       data-product="2"
@@ -2034,10 +2058,11 @@
                 </div>
               </div>
               <div class="product-info">
-                <h3>Citrus Burst Bitters</h3>
+                <h3>Crave Tonic</h3>
                 <p>
-                  A vibrant blend of lemon, grapefruit, and bergamot with subtle
-                  herbal undertones. Ideal for brightening up cocktails.
+                  A vibrant butterfly pea flower extract with subtle herbal
+                  undertones, ideal to ensure your perfect relaxation after hard
+                  days work.
                 </p>
               </div>
             </div>
@@ -2059,7 +2084,10 @@
             <h3>Francis Andzie-Quainoo</h3>
             <div class="founder-title">Co-Founder</div>
             <p class="founder-bio">
-              With over 25 years in the spirits industry, Francis brings deep expertise in flavor development and botanical formulation, creating unique, award-winning flavors known for their balance, depth, and global appeal.
+              With over 25 years in the spirits industry, Francis brings deep
+              expertise in flavor development and botanical formulation,
+              creating unique, award-winning flavors known for their balance,
+              depth, and global appeal.
             </p>
           </div>
           <div class="founder-card" id="founder2">
@@ -2069,7 +2097,9 @@
             <h3>Alex Otoo</h3>
             <div class="founder-title">Co-Founder</div>
             <p class="founder-bio">
-              Alex's 25 years experience in oil and gas refinery and innovative ideas allows him to bring onboard rich distillation expertise that has contributed  to the success of many international organizations
+              Alex's 25 years experience in oil and gas refinery and innovative
+              ideas allows him to bring onboard rich distillation expertise that
+              has contributed to the success of many international organizations
             </p>
           </div>
         </div>
@@ -2340,26 +2370,20 @@
                 "Sharke Bitters delivers a natural taste cherished by daily users, helps women with candidiasis (white infection) and menstrual pains, and provides relief for men with sexual weakness.",
             },
             2: {
-              name: "Citrus Burst Bitters",
+              name: "Crave Tonic",
               description:
-                "A vibrant blend of lemon, grapefruit, and bergamot with subtle herbal undertones. Ideal for brightening up gin and vodka cocktails.",
-              abv: "38% ABV",
+                "A vibrant butterfly pea flower extract with subtle herbal undertones, ideal to ensure your perfect relaxation after hard days work.",
+              abv: "Non-Alcoholic",
               badge: "NEW RELEASE",
               image: "/images/property_2.jpg",
-              images: [
-                "/images/property_2.jpg",
-                "/images/property_1.png",
-                "/images/hero2.png",
-                "/images/4.jpeg",
-              ],
+              images: ["/images/property_2.jpg"],
               features: [
-                "Natural citrus extracts from Sicily",
-                "Subtle herbal undertones of thyme and rosemary",
-                "Lower ABV for smoother cocktails",
-                "Bright, refreshing flavor profile",
+                "Natural extract from butterfly pea flower",
+                "Subtle herbal undertone of thyme and butterfly pea flower",
+                "Bright and refreshing flavour profile",
               ],
               serving:
-                "Excellent in a Gin & Tonic (2oz gin, tonic water, 2 dashes Citrus Burst Bitters, lime wedge) or Vodka Sour.",
+                "Excellent in antioxidant content, helps relieve stress, support weight loss and reduce inflammation",
             },
           };
 
@@ -2474,5 +2498,3 @@
     </script>
   </body>
 </html>
-
-
